@@ -41,8 +41,8 @@
         default_layer {
             bindings = <
           &kp ESC     &kp N1    &kp N2  &kp N3  &kp N4  &kp N5                  &tog 1                                                                    &mo 3  &kp N6         &kp N7      &kp N8    &kp N9    &kp N0  &kp EQUAL
-          &kp TAB      &kp Q     &kp W   &kp E   &kp R   &kp T                   &none                                                              &kp PAGE_UP   &kp Y          &kp U       &kp I     &kp O     &kp P  &kp MINUS
-            &mo 2      &kp A     &kp S   &kp D   &kp F   &kp G                   &none    &kp ESC  &kp LWIN                  &kp LEFT  &kp RIGHT  &kp PAGE_DOWN   &kp H          &kp J       &kp K     &kp L  &kp SEMI   &kp BSLH
+          &kp TAB      &kp Q     &kp W   &kp E   &kp R   &kp T                   &none                                                                    &none   &kp Y          &kp U       &kp I     &kp O     &kp P  &kp MINUS
+            &mo 2      &kp A     &kp S   &kp D   &kp F   &kp G                   &none    &kp ESC  &kp LWIN                  &kp LEFT  &kp RIGHT          &none   &kp H          &kp J       &kp K     &kp L  &kp SEMI   &kp BSLH
         &kp LSHFT      &kp Z     &kp X   &kp C   &kp V   &kp B                                        &mo 5                    &kp UP                             &kp N          &kp M   &kp COMMA   &kp DOT  &kp FSLH    &kp SQT
  &kp LEFT_CONTROL  &kp GRAVE  &kp CAPS   &none   &none                    &kp LEFT_ALT  &kp SPACE     &mo 4                  &kp DOWN  &kp ENTER  &kp LC(SPACE)          &kp BACKSPACE  &kp DELETE  &kp LBKT  &kp RBKT      &mo 2
             >;
@@ -70,11 +70,11 @@
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+  &none          &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
+  &none  &kp LC(LS(NUMBER_1))  &kp LC(LS(NUMBER_2))         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
+  &none                 &none                 &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
+  &none                 &none                 &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
+  &none                 &none                 &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
             >;
         };
 
