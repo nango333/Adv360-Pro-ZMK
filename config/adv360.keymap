@@ -60,11 +60,11 @@
 
         layer_fn {
             bindings = <
- &kp F1     &kp F2     &kp F3      &kp F4     &kp F5     &kp F6            &tog 1                                                   &mo 3         &kp F7     &kp F8       &kp F9    &kp F10  &kp F11  &kp F12
- &trans  &kp LC(Q)  &kp LC(W)     &kp END  &kp LC(R)  &kp LC(T)             &none                                                   &none      &kp LC(V)  &kp LC(U)    &kp LC(I)  &kp LC(O)   &kp UP   &trans
- &trans   &kp HOME  &kp LC(S)  &kp DELETE  &kp RIGHT  &kp LC(G)            &trans  &trans  &trans                  &trans  &trans  &trans  &kp BACKSPACE  &kp LC(J)  &macro_kill  &kp LC(L)   &trans   &trans
- &trans  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)   &kp LEFT                            &trans                  &trans                       &kp DOWN  &kp LC(M)       &trans     &trans   &trans   &trans
- &trans     &trans     &trans      &trans     &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                    &trans       &trans     &trans   &trans   &trans
+ &kp F1     &kp F2     &kp F3      &kp F4     &kp F5     &kp F6            &tog 1                                                          &mo 3         &kp F7     &kp F8       &kp F9    &kp F10  &kp F11  &kp F12
+ &trans  &kp LC(Q)  &kp LC(W)     &kp END  &kp LC(R)  &kp LC(T)             &none                                                          &none      &kp LC(V)  &kp LC(U)    &kp LC(I)  &kp LC(O)   &kp UP   &trans
+ &trans   &kp HOME  &kp LC(S)  &kp DELETE  &kp RIGHT  &kp LC(G)            &trans  &trans  &trans                         &trans  &trans  &trans  &kp BACKSPACE  &kp LC(J)  &macro_kill  &kp LC(L)   &trans   &trans
+ &trans  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)   &kp LEFT                            &trans                    &kp PAGE_UP                       &kp DOWN  &kp LC(M)       &trans     &trans   &trans   &trans
+ &trans     &trans     &trans      &trans     &trans                       &trans  &trans  &trans                  &kp PAGE_DOWN  &trans  &trans                    &trans       &trans     &trans   &trans   &trans
             >;
         };
 
