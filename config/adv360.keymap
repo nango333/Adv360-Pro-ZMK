@@ -31,6 +31,22 @@
         };
     };
 
+    macros {
+        switch_note: switch_note {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(NUMBER_2)) &bt BT_SEL 1>;
+            label = "SWITCH_NOTE";
+        };
+
+        switch_desk: switch_desk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(NUMBER_1)) &bt BT_SEL 0>;
+            label = "SWITCH_DESK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -68,7 +84,7 @@
             bindings = <
 &none  &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
 &none  &kp LC(LS(NUMBER_1))  &kp LC(LS(NUMBER_2))  &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none                 &none                 &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &switch_desk          &switch_note          &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none                 &none                 &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none                 &none                 &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
